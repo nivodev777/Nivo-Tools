@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.nivodev.nivotools.ui.engine.LiquidBackdropView
+        android:id="@+id/liquid_backdrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        tools:openDrawer="start">
+
+        <include
+            android:id="@+id/app_bar_main"
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+
+            <com.nivodev.nivotools.ui.engine.LiquidBackdropView
+                android:id="@+id/drawer_liquid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.55" />
+
+            <com.google.android.material.navigation.NavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:itemShapeAppearance="@style/ShapeAppearance.Nivo.NavRow"
+                app:itemShapeInsetBottom="8dp"
+                app:itemShapeInsetEnd="18dp"
+                app:itemShapeInsetStart="10dp"
+                app:itemShapeInsetTop="8dp"
+                app:itemIconTint="@color/nav_item_tint"
+                app:itemTextColor="@color/nav_item_tint"
+                app:headerLayout="@layout/nav_header_main"
+                app:menu="@menu/activity_main_drawer" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_drawer_settings"
+                style="@style/Widget.Material3.Button.IconButton.Filled"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/glass_fill_strong_light"
+                android:contentDescription="@string/menu_slideshow"
+                app:cornerRadius="18dp"
+                app:icon="@drawable/ic_nav_settings"
+                app:iconGravity="textStart"
+                app:iconTint="?attr/colorOnSurface" />
+
+        </FrameLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</FrameLayout>

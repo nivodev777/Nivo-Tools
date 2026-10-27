@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="18dp"
+    android:paddingStart="18dp"
+    android:paddingEnd="18dp"
+    android:paddingBottom="26dp">
+
+    <TextView
+        android:id="@+id/sheet_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:text="@string/alarm_add"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/sheet_alarm_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_solid_round"
+        android:hint="@string/alarm_label_hint"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="14dp"
+        android:textColor="@color/light_on_surface"
+        android:textColorHint="@color/light_on_surface_variant"
+        android:textSize="15sp" />
+
+    <!-- time row -->
+    <LinearLayout
+        android:id="@+id/sheet_time_card"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_solid_round"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:background="@drawable/bg_solid_round"
+            android:importantForAccessibility="no"
+            android:padding="11dp"
+            android:src="@drawable/ic_clock"
+            app:tint="@color/light_on_surface_variant" />
+
+        <TextView
+            android:id="@+id/sheet_alarm_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="12:00 AM"
+            android:textColor="@color/light_on_surface"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.65"
+            android:text="@string/tp_edit"
+            android:textColor="@color/light_on_surface_variant"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <!-- how the alarm will be dismissed -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_solid_round"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:alpha="0.75"
+            android:text="@string/stop_mode_title"
+            android:textColor="@color/light_on_surface_variant"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/sheet_mode_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+
+    <!-- repeat days -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_solid_round"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:alpha="0.75"
+            android:text="@string/alarm_repeat"
+            android:textColor="@color/light_on_surface_variant"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/sheet_days_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sheet_alarm_tune"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/chip_idle"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/alarm_tune_row"
+        android:textColor="@color/light_on_surface"
+        android:textSize="14sp"
+        app:cornerRadius="18dp"
+        app:icon="@drawable/ic_music"
+        app:iconGravity="textStart"
+        app:iconTint="?attr/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sheet_cancel"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/sheet_cancel"
+            android:textColor="@color/light_on_surface_variant"
+            app:cornerRadius="22dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sheet_save"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:backgroundTint="?attr/colorPrimary"
+            android:text="@string/sheet_save"
+            android:textColor="@color/light_on_primary"
+            android:textSize="15sp"
+            app:cornerRadius="22dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

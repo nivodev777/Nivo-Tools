@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+    <!-- Liquid glass -->
+    <dimen name="glass_radius">24dp</dimen>
+    <dimen name="glass_radius_small">16dp</dimen>
+    <dimen name="glass_radius_sheet">28dp</dimen>
+    <dimen name="glass_stroke">1dp</dimen>
+    <dimen name="glass_elevation">0dp</dimen>
+    <dimen name="card_spacing">10dp</dimen>
+    <dimen name="screen_padding">16dp</dimen>
+    <dimen name="fab_margin">18dp</dimen>
+    <dimen name="priority_bar_width">4dp</dimen>
+</resources>

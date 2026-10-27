@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand palette (liquid violet / cyan / pink) -->
+    <color name="brand_violet">#6C5CE7</color>
+    <color name="brand_cyan">#00B8D9</color>
+    <color name="brand_pink">#FF6B9D</color>
+    <color name="brand_amber">#FFB84D</color>
+    <color name="brand_teal">#2ED3B7</color>
+
+    <!-- Light theme -->
+    <color name="light_primary">#5B4DFF</color>
+    <color name="light_on_primary">#FFFFFF</color>
+    <color name="light_primary_container">#E2DEFF</color>
+    <color name="light_on_primary_container">#1B1064</color>
+    <color name="light_secondary">#0099B8</color>
+    <color name="light_on_secondary">#FFFFFF</color>
+    <color name="light_tertiary">#C94F7C</color>
+    <color name="light_background">#F4F2FF</color>
+    <color name="light_on_background">#1B1B22</color>
+    <color name="light_surface">#F8F7FF</color>
+    <color name="light_on_surface">#1B1B22</color>
+    <color name="light_surface_variant">#E8E4F6</color>
+    <color name="light_on_surface_variant">#494554</color>
+    <color name="light_outline">#C9C4D4</color>
+    <color name="light_error">#B3261E</color>
+    <color name="light_on_error">#FFFFFF</color>
+
+    <!-- Solid chips: alarm sheets, keypads, day toggles -->
+    <color name="chip_idle">#ECECF4</color>
+
+    <!-- Liquid glass (light): visible juicy transparency -->
+    <color name="glass_fill_light">#96FFFFFF</color>
+    <color name="glass_fill_strong_light">#D9FFFFFF</color>
+    <color name="glass_fill_soft_light">#5CFFFFFF</color>
+    <color name="glass_stroke_light">#A6FFFFFF</color>
+    <color name="glass_stroke_soft_light">#40FFFFFF</color>
+    <color name="glass_highlight_start">#B3FFFFFF</color>
+    <color name="glass_highlight_end">#00FFFFFF</color>
+    <color name="glass_on_light">#1B1B22</color>
+    <color name="glass_drawer_light">#7AFFFFFF</color>
+
+    <!-- Liquid backdrop blobs (light): rich colored washes -->
+    <color name="blob_violet_light">#4D6C5CE7</color>
+    <color name="blob_cyan_light">#4D00C7E2</color>
+    <color name="blob_pink_light">#4DFF6B9D</color>
+    <color name="blob_amber_light">#4DFFB84D</color>
+
+    <!-- Priority accents -->
+    <color name="priority_high">#FF5A7A</color>
+    <color name="priority_medium">#FFB84D</color>
+    <color name="priority_low">#2ED3B7</color>
+
+    <!-- Category accents -->
+    <color name="cat_work">#6C5CE7</color>
+    <color name="cat_personal">#FF6B9D</color>
+    <color name="cat_shopping">#00CEC9</color>
+    <color name="cat_health">#FF7675</color>
+    <color name="cat_ideas">#FDCB6E</color>
+
+    <!-- Utility -->
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <!-- Adaptive icon background (matches existing PNG logo base) -->
+    <color name="icon_bg">#5B4DFF</color>
+    <color name="swipe_delete_bg">#CCB3261E</color>
+    <color name="done_strike">#8A000000</color>
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Accent palettes. NivoApp picks one at random on every cold start and
+      applies it as a runtime overlay, so each app open gets a fresh accent
+      instead of the fixed purple. Only primary-family tokens are overridden -
+      glass colors, surfaces and blochas stay untouched.
+    -->
+    <style name="ThemeAccent0">
+        <item name="colorPrimary">#6C5CE7</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#D7D1FD</item>
+        <item name="colorOnPrimaryContainer">#2C2073</item>
+    </style>
+    <style name="ThemeAccent1">
+        <item name="colorPrimary">#3F6CE0</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#D3DFFB</item>
+        <item name="colorOnPrimaryContainer">#14308F</item>
+    </style>
+    <style name="ThemeAccent2">
+        <item name="colorPrimary">#14B8A6</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#CCF5EF</item>
+        <item name="colorOnPrimaryContainer">#0B544B</item>
+    </style>
+    <style name="ThemeAccent3">
+        <item name="colorPrimary">#22B573</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#D3F4E3</item>
+        <item name="colorOnPrimaryContainer">#0F5B38</item>
+    </style>
+    <style name="ThemeAccent4">
+        <item name="colorPrimary">#E8783A</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#FAE2D2</item>
+        <item name="colorOnPrimaryContainer">#7A3113</item>
+    </style>
+    <style name="ThemeAccent5">
+        <item name="colorPrimary">#F06060</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#FBD9D9</item>
+        <item name="colorOnPrimaryContainer">#7A1F1F</item>
+    </style>
+    <style name="ThemeAccent6">
+        <item name="colorPrimary">#E53935</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#FAD7D6</item>
+        <item name="colorOnPrimaryContainer">#6F1412</item>
+    </style>
+    <style name="ThemeAccent7">
+        <item name="colorPrimary">#E64C8C</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#FBD9E8</item>
+        <item name="colorOnPrimaryContainer">#761F46</item>
+    </style>
+    <style name="ThemeAccent8">
+        <item name="colorPrimary">#EC5DA8</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#FBD9EC</item>
+        <item name="colorOnPrimaryContainer">#791A4F</item>
+    </style>
+    <style name="ThemeAccent9">
+        <item name="colorPrimary">#B14BE0</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#EBD7F9</item>
+        <item name="colorOnPrimaryContainer">#4E1770</item>
+    </style>
+    <style name="ThemeAccent10">
+        <item name="colorPrimary">#8E4BE0</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#E7D7FA</item>
+        <item name="colorOnPrimaryContainer">#3E1862</item>
+    </style>
+    <style name="ThemeAccent11">
+        <item name="colorPrimary">#5054C9</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#D9DAF9</item>
+        <item name="colorOnPrimaryContainer">#1B1E67</item>
+    </style>
+    <style name="ThemeAccent12">
+        <item name="colorPrimary">#3B9FE8</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#D3E8FA</item>
+        <item name="colorOnPrimaryContainer">#135079</item>
+    </style>
+    <style name="ThemeAccent13">
+        <item name="colorPrimary">#18A8D8</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#CFF0FA</item>
+        <item name="colorOnPrimaryContainer">#0B5A77</item>
+    </style>
+    <style name="ThemeAccent14">
+        <item name="colorPrimary">#7CB342</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#E2F2D3</item>
+        <item name="colorOnPrimaryContainer">#3D611F</item>
+    </style>
+    <style name="ThemeAccent15">
+        <item name="colorPrimary">#34A853</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#D7F0DC</item>
+        <item name="colorOnPrimaryContainer">#16572A</item>
+    </style>
+    <style name="ThemeAccent16">
+        <item name="colorPrimary">#E9A319</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#FAEBD2</item>
+        <item name="colorOnPrimaryContainer">#7A5410</item>
+    </style>
+    <style name="ThemeAccent17">
+        <item name="colorPrimary">#C79A2A</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#F6EBCD</item>
+        <item name="colorOnPrimaryContainer">#55400B</item>
+    </style>
+    <style name="ThemeAccent18">
+        <item name="colorPrimary">#A06A3F</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#EFDFD1</item>
+        <item name="colorOnPrimaryContainer">#46291A</item>
+    </style>
+    <style name="ThemeAccent19">
+        <item name="colorPrimary">#546E7A</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#DCE6EA</item>
+        <item name="colorOnPrimaryContainer">#22333A</item>
+    </style>
+</resources>

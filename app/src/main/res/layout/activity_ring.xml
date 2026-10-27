@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- same liquid blob backdrop the main app uses -->
+    <com.nivodev.nivotools.ui.engine.LiquidBackdropView
+        android:id="@+id/liquid_backdrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <!-- pushes the identity card just below the status bar -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.45" />
+
+            <!-- alarm identity card -->
+            <LinearLayout
+                android:id="@+id/ring_top_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/glass_panel"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/bg_circle_chip"
+                    android:gravity="center"
+                    android:importantForAccessibility="no"
+                    android:text="&#9200;"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_ring_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/alarm_fired_title"
+                        android:textColor="@color/light_on_surface"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_ring_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.7"
+                        android:text="--:-- --"
+                        android:textColor="@color/light_on_surface_variant"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- flexible space above the ringing visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25" />
+
+            <!-- ringing pulse animation (mode 1 only) -->
+            <FrameLayout
+                android:id="@+id/ring_pulse_root"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <View
+                    android:id="@+id/ring_pulse_1"
+                    android:layout_width="116dp"
+                    android:layout_height="116dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ring_pulse_ring" />
+
+                <View
+                    android:id="@+id/ring_pulse_2"
+                    android:layout_width="116dp"
+                    android:layout_height="116dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ring_pulse_ring" />
+
+                <FrameLayout
+                    android:layout_width="94dp"
+                    android:layout_height="94dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_ring_pulse_center"
+                    android:elevation="8dp">
+
+                    <ImageView
+                        android:id="@+id/ring_bell"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_gravity="center"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_alarm"
+                        app:tint="@color/light_on_primary" />
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <!-- flexible space below the ringing visual -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.45" />
+
+            <!-- question card with digit answer boxes -->
+            <LinearLayout
+                android:id="@+id/ring_question_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/glass_panel"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:text="@string/ring_solve"
+                    android:textColor="@color/light_on_surface_variant"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/text_ring_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="7 + 5 = ?"
+                    android:textColor="@color/light_on_surface"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ring_digit_a"
+                        android:layout_width="52dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/bg_solid_round"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/light_on_surface"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ring_digit_b"
+                        android:layout_width="52dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/bg_solid_round"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/light_on_surface"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_ring_wrong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/ring_wrong"
+                    android:textColor="@color/light_error"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <!-- Off / Pause buttons (mode 1): hidden until the alarm uses it -->
+            <LinearLayout
+                android:id="@+id/ring_buttons_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/ring_pause_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.75"
+                    android:gravity="center"
+                    android:text="@string/ring_pause_note"
+                    android:textColor="@color/light_on_surface"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/ring_btn_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_ring_btn_off"
+                    android:elevation="4dp"
+                    android:gravity="center"
+                    android:text="@string/ring_btn_off"
+                    android:textColor="@color/light_on_primary"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ring_btn_pause"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/bg_solid_round"
+                    android:gravity="center"
+                    android:text="@string/ring_btn_pause"
+                    android:textColor="@color/light_on_surface"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- keypad lives full width at the bottom -->
+            <LinearLayout
+                android:id="@+id/container_ring_keys"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="6dp"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

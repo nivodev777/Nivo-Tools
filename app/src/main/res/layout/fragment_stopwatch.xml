@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Stopwatch screen: STOPWATCH card (top) + TIMER card (neeche, same
+     glass style) - dono ek sath dikhte hain, screen khali nahi lagti -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/sw_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <!-- ============ STOPWATCH card ============ -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/glass_panel"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="14dp">
+
+                <TextView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/bg_circle_chip"
+                    android:gravity="center"
+                    android:importantForAccessibility="no"
+                    android:text="&#9201;"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/sw_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:letterSpacing="-0.02"
+                        android:text="@string/sw_time_zero"
+                        android:textColor="@color/light_on_surface"
+                        android:textSize="40sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sw_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:text="@string/sw_note_idle"
+                        android:textColor="@color/light_on_surface_variant"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- stopwatch actions: accent Start/Pause + soft Lap/Reset -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sw_action"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.35"
+                    android:background="@drawable/bg_ring_btn_off"
+                    android:gravity="center"
+                    android:text="@string/sw_start"
+                    android:textColor="@color/light_on_primary"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="1dp" />
+
+                <TextView
+                    android:id="@+id/sw_lap"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:alpha="0.8"
+                    android:background="@drawable/bg_solid_round"
+                    android:gravity="center"
+                    android:text="@string/sw_lap"
+                    android:textColor="@color/light_on_surface"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- laps -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sw_laps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+            <!-- ============ TIMER card (neeche, same style) ============ -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/glass_panel"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="14dp">
+
+                <TextView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/bg_circle_chip"
+                    android:gravity="center"
+                    android:importantForAccessibility="no"
+                    android:text="&#9203;"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/t_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:letterSpacing="-0.02"
+                        android:text="@string/sw_time_zero"
+                        android:textColor="@color/light_on_surface"
+                        android:textSize="40sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/t_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:text="@string/sw_t_ready"
+                        android:textColor="@color/light_on_surface_variant"
+                        android:textSize="13sp" />
+
+                    <!-- quick presets -->
+                    <LinearLayout
+                        android:id="@+id/t_presets"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- timer actions: accent Start/Pause/Resume + +1min/Reset -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/t_btn_start"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.35"
+                    android:background="@drawable/bg_ring_btn_off"
+                    android:gravity="center"
+                    android:text="@string/sw_start"
+                    android:textColor="@color/light_on_primary"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="1dp" />
+
+                <TextView
+                    android:id="@+id/t_btn_more"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:alpha="0.8"
+                    android:background="@drawable/bg_solid_round"
+                    android:gravity="center"
+                    android:text="@string/sw_add_min"
+                    android:textColor="@color/light_on_surface"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="12dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

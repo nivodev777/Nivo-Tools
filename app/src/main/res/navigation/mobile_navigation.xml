@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_music"
+    app:enterAnim="@anim/nav_enter"
+    app:exitAnim="@anim/nav_exit"
+    app:popEnterAnim="@anim/nav_pop_enter"
+    app:popExitAnim="@anim/nav_pop_exit">
+
+    <fragment
+        android:id="@+id/nav_music"
+        android:name="com.nivodev.nivotools.ui.music.MusicFragment"
+        android:label="@string/music_title"
+        tools:layout="@layout/fragment_music" />
+
+    <fragment
+        android:id="@+id/nav_now_playing"
+        android:name="com.nivodev.nivotools.ui.music.NowPlayingFragment"
+        android:label="@string/now_playing_title"
+        tools:layout="@layout/fragment_now_playing" />
+
+    <fragment
+        android:id="@+id/nav_calculator"
+        android:name="com.nivodev.nivotools.ui.tools.calculator.CalculatorFragment"
+        android:label="@string/menu_calculator"
+        tools:layout="@layout/fragment_calculator" />
+
+    <fragment
+        android:id="@+id/nav_alarm"
+        android:name="com.nivodev.nivotools.ui.tools.alarm.AlarmFragment"
+        android:label="@string/menu_alarm"
+        tools:layout="@layout/fragment_alarm" />
+
+    <fragment
+        android:id="@+id/nav_notes"
+        android:name="com.nivodev.nivotools.ui.tools.notes.NotesFragment"
+        android:label="@string/menu_notes"
+        tools:layout="@layout/fragment_notes" />
+
+    <fragment
+        android:id="@+id/nav_reader"
+        android:name="com.nivodev.nivotools.ui.tools.reader.ReaderFragment"
+        android:label="@string/menu_reader"
+        tools:layout="@layout/fragment_reader" />
+
+    <fragment
+        android:id="@+id/nav_stopwatch"
+        android:name="com.nivodev.nivotools.ui.tools.stopwatch.StopwatchFragment"
+        android:label="@string/menu_stopwatch"
+        tools:layout="@layout/fragment_stopwatch" />
+
+    <fragment
+        android:id="@+id/nav_compass"
+        android:name="com.nivodev.nivotools.ui.tools.compass.CompassFragment"
+        android:label="@string/menu_compass"
+        tools:layout="@layout/fragment_compass" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.nivodev.nivotools.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

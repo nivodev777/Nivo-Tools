@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="18dp"
+    android:paddingStart="14dp"
+    android:paddingEnd="14dp"
+    android:paddingBottom="26dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sheet_fav"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/song_option_fav"
+        android:textColor="?attr/colorOnSurface"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_heart_off"
+        app:iconGravity="textStart"
+        app:iconPadding="18dp"
+        app:iconTint="?attr/colorPrimary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sheet_playnext"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/song_option_play_next"
+        android:textColor="?attr/colorOnSurface"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_next"
+        app:iconGravity="textStart"
+        app:iconPadding="18dp"
+        app:iconTint="?attr/colorPrimary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sheet_info"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/menu_info"
+        android:textColor="?attr/colorOnSurface"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_info"
+        app:iconGravity="textStart"
+        app:iconPadding="18dp"
+        app:iconTint="?attr/colorPrimary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sheet_rename"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/menu_rename"
+        android:textColor="?attr/colorOnSurface"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_rename"
+        app:iconGravity="textStart"
+        app:iconPadding="18dp"
+        app:iconTint="?attr/colorSecondary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sheet_delete"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="4dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/menu_delete"
+        android:textColor="@color/light_error"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_delete"
+        app:iconGravity="textStart"
+        app:iconPadding="18dp"
+        app:iconTint="@color/light_error" />
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Edge-to-edge is enforced on API 35+: pick dark/light system bar icons to match the theme. -->
+        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+        <item name="android:windowLightNavigationBar">?attr/isLightTheme</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowBackground">@drawable/bg_gradient</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+        <item name="colorPrimary">@color/light_primary</item>
+        <item name="colorOnPrimary">@color/light_on_primary</item>
+        <item name="colorPrimaryContainer">@color/light_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/light_on_primary_container</item>
+        <item name="colorSecondary">@color/light_secondary</item>
+        <item name="colorOnSecondary">@color/light_on_secondary</item>
+        <item name="colorTertiary">@color/light_tertiary</item>
+        <item name="android:colorBackground">@color/light_background</item>
+        <item name="colorOnBackground">@color/light_on_background</item>
+        <item name="colorSurface">@color/light_surface</item>
+        <item name="colorOnSurface">@color/light_on_surface</item>
+        <item name="colorSurfaceVariant">@color/light_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/light_on_surface_variant</item>
+        <item name="colorOutline">@color/light_outline</item>
+        <item name="colorError">@color/light_error</item>
+        <item name="colorOnError">@color/light_on_error</item>
+
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.Nivo.BottomSheet</item>
+    </style>
+
+    <!-- Three-dot overflow popup: same liquid-glass look as the app -->
+    <style name="Widget.Nivo.PopupMenu" parent="Widget.Material3.PopupMenu.Overflow">
+        <item name="android:popupBackground">@drawable/glass_menu_bg</item>
+    </style>
+
+    <style name="Widget.Nivo.PopupMenu.Context" parent="Widget.Material3.PopupMenu.ContextMenu">
+        <item name="android:popupBackground">@drawable/glass_menu_bg</item>
+    </style>
+
+    <style name="AppTheme" parent="Base.AppTheme">
+        <item name="android:popupMenuStyle">@style/Widget.Nivo.PopupMenu</item>
+        <item name="android:contextPopupMenuStyle">@style/Widget.Nivo.PopupMenu.Context</item>
+        <item name="android:itemTextAppearance">@style/Widget.Nivo.PopupMenu.Text</item>
+    </style>
+
+    <style name="Widget.Nivo.PopupMenu.Text" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/glass_on_light</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- Glass-styled dialogs (unchanged night handling: token color flips in night values) -->
+    <style name="ThemeOverlay.Nivo.AlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="alertDialogStyle">@style/Widget.Nivo.AlertDialog</item>
+    </style>
+
+    <style name="Widget.Nivo.AlertDialog" parent="MaterialAlertDialog.Material3">
+        <item name="backgroundTint">@color/glass_fill_strong_light</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Nivo.Dialog</item>
+    </style>
+
+    <style name="ShapeAppearance.Nivo.Dialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Nivo.NavRow" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">22dp</item>
+    </style>
+
+    <style name="ThemeOverlay.Nivo.BottomSheet" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.Nivo.BottomSheet</item>
+    </style>
+
+    <style name="Widget.Nivo.BottomSheet" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="backgroundTint">@color/glass_fill_strong_light</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Nivo.BottomSheet</item>
+    </style>
+
+    <style name="ShapeAppearance.Nivo.BottomSheet" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">28dp</item>
+        <item name="cornerSizeTopRight">28dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="Widget.Nivo.ToolbarTitle" parent="">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextAppearance.Nivo.GlassTitle" parent="">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="TextAppearance.Nivo.ItemTitle" parent="">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <style name="TextAppearance.Nivo.ItemBody" parent="">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <style name="Widget.Nivo.GlassButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="cornerRadius">16dp</item>
+    </style>
+</resources>

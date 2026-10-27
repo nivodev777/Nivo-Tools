@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_music"
+            android:icon="@drawable/ic_music"
+            android:title="@string/menu_music" />
+        <item
+            android:id="@+id/nav_calculator"
+            android:icon="@drawable/ic_calc"
+            android:title="@string/menu_calculator" />
+        <item
+            android:id="@+id/nav_alarm"
+            android:icon="@drawable/ic_alarm"
+            android:title="@string/menu_alarm" />
+        <item
+            android:id="@+id/nav_notes"
+            android:icon="@drawable/ic_notes"
+            android:title="@string/menu_notes" />
+        <item
+            android:id="@+id/nav_reader"
+            android:icon="@drawable/ic_reader"
+            android:title="@string/menu_reader" />
+        <item
+            android:id="@+id/nav_stopwatch"
+            android:icon="@drawable/ic_stopwatch"
+            android:title="@string/menu_stopwatch" />
+        <item
+            android:id="@+id/nav_compass"
+            android:icon="@drawable/ic_compass"
+            android:title="@string/menu_compass" />
+    </group>
+</menu>

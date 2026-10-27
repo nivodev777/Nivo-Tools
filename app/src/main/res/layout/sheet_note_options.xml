@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="18dp"
+    android:paddingStart="14dp"
+    android:paddingEnd="14dp"
+    android:paddingBottom="26dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sheet_opt_pin"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/note_opts_pin"
+        android:textColor="?attr/colorOnSurface"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_pin"
+        app:iconGravity="textStart"
+        app:iconPadding="18dp"
+        app:iconTint="?attr/colorPrimary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sheet_opt_dup"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/note_opts_dup"
+        android:textColor="?attr/colorOnSurface"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_edit"
+        app:iconGravity="textStart"
+        app:iconPadding="18dp"
+        app:iconTint="?attr/colorPrimary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sheet_opt_copy"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/note_opts_copy"
+        android:textColor="?attr/colorOnSurface"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_copy"
+        app:iconGravity="textStart"
+        app:iconPadding="18dp"
+        app:iconTint="?attr/colorPrimary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sheet_opt_share"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/note_opts_share"
+        android:textColor="?attr/colorOnSurface"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_share"
+        app:iconGravity="textStart"
+        app:iconPadding="18dp"
+        app:iconTint="?attr/colorPrimary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sheet_opt_delete"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/note_opts_delete"
+        android:textColor="?attr/colorOnSurface"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/ic_delete"
+        app:iconGravity="textStart"
+        app:iconPadding="18dp"
+        app:iconTint="?attr/colorError" />
+
+</LinearLayout>

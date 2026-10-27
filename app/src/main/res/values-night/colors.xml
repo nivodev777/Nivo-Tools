@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark theme -->
+    <color name="light_primary">#A99BFF</color>
+    <color name="light_on_primary">#2A1B6B</color>
+    <color name="light_primary_container">#4A3FA0</color>
+    <color name="light_on_primary_container">#E4DFFF</color>
+    <color name="light_secondary">#4FD8F5</color>
+    <color name="light_on_secondary">#00333D</color>
+    <color name="light_tertiary">#FF9FBD</color>
+    <color name="light_background">#0F0E15</color>
+    <color name="light_on_background">#E7E1F2</color>
+    <color name="light_surface">#16151F</color>
+    <color name="light_on_surface">#E7E1F2</color>
+    <color name="light_surface_variant">#25232F</color>
+    <color name="light_on_surface_variant">#C7C2D4</color>
+    <color name="light_outline">#44414F</color>
+    <color name="light_error">#F2B8B5</color>
+    <color name="light_on_error">#601410</color>
+
+    <!-- Solid chips: alarm sheets, keypads, day toggles -->
+    <color name="chip_idle">#232331</color>
+
+    <!-- Liquid glass (dark): luminous frost over midnight -->
+    <color name="glass_fill_light">#52151521</color>
+    <color name="glass_fill_strong_light">#991E1D28</color>
+    <color name="glass_fill_soft_light">#33131319</color>
+    <color name="glass_stroke_light">#5CFFFFFF</color>
+    <color name="glass_stroke_soft_light">#26FFFFFF</color>
+    <color name="glass_highlight_start">#2EFFFFFF</color>
+    <color name="glass_highlight_end">#00FFFFFF</color>
+    <color name="glass_on_light">#E7E1F2</color>
+    <color name="glass_drawer_light">#8713131F</color>
+
+    <!-- Liquid backdrop blobs (dark): glow fields -->
+    <color name="blob_violet_light">#566C5CE7</color>
+    <color name="blob_cyan_light">#5600B8D9</color>
+    <color name="blob_pink_light">#56FF6B9D</color>
+    <color name="blob_amber_light">#56FFB84D</color>
+
+    <color name="done_strike">#8AE7E1F2</color>
+</resources>
