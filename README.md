@@ -69,5 +69,10 @@ content is never held in cache-only storage.
 
 ## License
 
-Not yet specified - add a LICENSE before publishing if you intend others to
-reuse the code.
+This project is licensed under the MIT License.
+See the [LICENSE](LICENSE) file for details.
+
+## Download
+
+Download the latest APK from
+[GitHub Releases](https://github.com/nivodev777/Nivo-Tools/releases).
