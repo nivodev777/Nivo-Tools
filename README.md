@@ -1,4 +1,4 @@
-# Nivo Tools
+﻿# Nivo Tools
 
 A lightweight, offline-first suite of everyday Android tools wrapped in a
 liquid-glass UI: music player, calculator, alarm, notes, document reader,
@@ -76,3 +76,21 @@ See the [LICENSE](LICENSE) file for details.
 
 Download the latest APK from
 [GitHub Releases](https://github.com/nivodev777/Nivo-Tools/releases).
+
+<!-- SCREENSHOTS_START -->
+## Screenshots
+
+| App screen | Light mode | Dark mode |
+|---|---|---|
+| alram | ![alram light](screenshorts/alram%20light.jpeg) | ![alram dark](screenshorts/alram%20dark.jpeg) |
+| calculator | ![calculator light](screenshorts/calculator%20light.jpeg) | ![calculator dark](screenshorts/calculator%20dark.jpeg) |
+| campass | ![campass light](screenshorts/campass%20light.jpeg) | ![campass dark](screenshorts/campass%20dark.jpeg) |
+| music | ![music light](screenshorts/music%20light.jpeg) | ![music dark](screenshorts/music%20dark.jpeg) |
+| note | ![note light](screenshorts/note%20light.jpeg) | ![note dark](screenshorts/note%20dark.jpeg) |
+| reader | ![reader light](screenshorts/reader%20light.jpeg) | ![reader dark](screenshorts/reader%20dark.jpeg) |
+| setting | ![setting light](screenshorts/setting%20light.jpeg) | ![setting dark](screenshorts/setting%20dark.jpeg) |
+| sidebar | ![sidebar light](screenshorts/sidebar%20light.jpeg) | ![sidebar dark](screenshorts/sidebar%20dark.jpeg) |
+| stop watch | ![stop watch light](screenshorts/stop%20watch%20light.jpeg) | ![stop watch dark](screenshorts/stop%20watch%20dark.jpeg) |
+
+<!-- SCREENSHOTS_END -->
+
